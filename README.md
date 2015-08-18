@@ -1,5 +1,4 @@
 # Blog in Drupal 8
-Blog in Drupal 8
 
 If you want to work on this -
  1. Fork this repo.
