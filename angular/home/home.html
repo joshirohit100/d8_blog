@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+ 
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+ 
+    <title>AngularJS & Firebase Web App</title>
+ 
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/examples/signin/signin.css" rel="stylesheet">
+ 
+</head>
+ 
+<body>
+ 
+    <div class="container" ng-controller="HomeCtrl">
+         <ul ng-repeat="level1 in tree.term">
+           <li><a href = {{level1.id}}>{{level1.name}}</a></li>
+           <ul ng-repeat = "level2 in level1.children">
+             <li><a href = {{level2.id}}>{{level2.name}}</a></li>              
+           </ul>
+	 </ul>
+    </div>   
+ 
+</body></html>
