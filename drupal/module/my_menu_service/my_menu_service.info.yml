@@ -1,0 +1,5 @@
+name: My Menu Service
+description: 'Expose and return the given menu as service'
+type: module
+core: 8.x
+package: Web services

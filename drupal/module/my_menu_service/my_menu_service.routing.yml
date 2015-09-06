@@ -1,0 +1,6 @@
+my_menu_service.controller:
+  path: '/menu-detail'
+  defaults:
+    _controller: '\Drupal\my_menu_service\Controller\MyMenuController::getMenus'
+  requirements:
+    _permission: 'access content'
